@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+
+.taskes-App {
+    width: 60%;
+    margin: 40px auto;
+}
+.taskes-App .form {
+    background-color: #f8f7f7;
+    padding: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.taskes-App .form .text {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.taskes-App .form .text:focus {
+    outline: none;
+}
+.taskes-App .form .submit {
+    width: calc(10% - 5px);
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: bold;
+}
+
+.taskes-App .tasks {
+    background-color: #f8f7f7;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.taskes-App .tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskes-App .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+.taskes-App .tasks .task:hover {
+    background-color: #eae7e7;
+}
+.taskes-App .tasks .task.done {
+    opacity: 0.5;
+}
+.taskes-App .tasks .task .del {
+    color: white;
+    background-color: rgb(255 0 0 / 60%);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.taskes-App .tasks .task .del:hover {
+    background-color: red;
+}
